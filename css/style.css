@@ -5,22 +5,28 @@ body{
     height: 1000px;
 }
 
-div#mainDiv{
+div.main{
     display: flex;
     flex-direction: column;
     width: 640px;
     height: 640px;
+    justify-content: stretch;
 }
 
-div#row{
+div.row{
     display: flex;
     flex-direction: row;
-    width: 640px;
-    height: 40px;
+    justify-content: stretch;
+    flex-grow: 1;
+
 }
 
-div#cell{
-    width: 40px;
-    height: 40px;
+div.cell{
+    flex-grow: 1;
     border: 1px black solid;
 }
+
+div.cell:hover, .clicked{
+    background-color: green
+}
+
